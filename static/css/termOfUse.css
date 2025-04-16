@@ -541,9 +541,9 @@ ul.wix-list-text-align p {
   > [id="comp-km20depj"] {
   position: relative;
   margin: 34px 0px 35px 0;
-  left: 480px;
+  /* left: 480px; */
   grid-area: 1 / 1 / 2 / 2;
-  justify-self: start;
+  justify-self: center;
   align-self: start;
 }
 [data-mesh-id="Containert6h3vinlineContent"] {
