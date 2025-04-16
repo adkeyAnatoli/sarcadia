@@ -7,12 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then((data) => {
-      // console.log("data:", data);
 
       const allMainLinks = document.querySelectorAll(".info-element-custom-button-wrapper");
-      // console.log(allMainLinks)
       const allSecondLinks = document.querySelectorAll(".style-klv5yxbzlink");
-      // console.log(allSecondLinks)
       let j = 0;
       for (let i = 0; i < allSecondLinks.length; i++) {
         j += 1;
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const allSecondOnlineCasino = document.querySelectorAll(".js-href-second");
-      console.log(allSecondOnlineCasino)
       let k = 0;
       for (let i = 0; i < allSecondOnlineCasino.length; i++) {
         k += 1;
@@ -35,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
       const galleryMarginContainer = document.querySelectorAll("#pro-gallery-margin-container a");
-      console.log(galleryMarginContainer)
       let x = 0;
       for (let i = 0; i < galleryMarginContainer.length; i++) {
         x += 1;
@@ -46,12 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       const galleryLinks = document.querySelectorAll('#pro-gallery-comp-klutoylt a');
-      // console.log(galleryLinks)
 
       const gallerySlotsLinks = document.querySelectorAll('#comp-klp2l9kc a');
-      // console.log(gallerySlotsLinks);
       const jsHrefMain = document.querySelectorAll('.js-href-main');
-      console.log(jsHrefMain, 'this is js')
       jsHrefMain.forEach((el) => {
         el.setAttribute("href", data.offers[0].link);
       });
